@@ -1,0 +1,29 @@
+# ---------------------------------------------------------
+# Enable Rewrite Engine
+# ---------------------------------------------------------
+RewriteEngine On
+
+# ---------------------------------------------------------
+# Force HTTPS (optional but recommended)
+# ---------------------------------------------------------
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ---------------------------------------------------------
+# Remove .html from URL
+# Example: domain.com/about loads about.html
+# ---------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# ---------------------------------------------------------
+# Redirect old .html links TO clean URLs
+# Example: domain.com/about.html → domain.com/about
+# ---------------------------------------------------------
+RewriteCond %{THE_REQUEST} "^[A-Z]+\s(.+)\.html\s"
+RewriteRule ^ %1 [R=301,L]
+
+# ---------------------------------------------------------
+# Set custom 404 page
+# ---------------------------------------------------------
+ErrorDocument 404 /404.html

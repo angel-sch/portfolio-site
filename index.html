@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="I am a creative with a passion for creating visually compelling, and user friendly websites. I enjoy helping people achieve amazing results by utilizing my skills as a digital marketer, designer, and developer.">
+  <meta name="keywords" content="ux strategist, product designer, case study, portfolio, ux">
+  <meta name="author" content="Angel Schoeneman">
+  <title>Angel Schoeneman | UX Designer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="custom.css">
+
+
+</head>
+<body class="bg-default font-sans" id="homepage">
+
+<!-- Main Portfolio Navigation -->
+<header class="bg-white shadow sticky top-0 z-50 animate-fadeIn" id="navigation">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Name -->
+    <a href="index.html" class="text-xl font-heading font-brand-AS fade-in"><strong>Angel Schoeneman</strong> | Portfolio</a>
+
+    <!-- Desktop Navigation -->
+    <nav class="space-x-6 hidden md:flex fade-in">
+      <a href="index.html" class="transition font-semibold">Home</a>
+      <a href="portfolio.html" class="transition">Portfolio</a>
+      <a href="resume.html" class="transition">Resume</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobileMenuButton" class="md:hidden flex items-center text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu Links -->
+  <nav id="mobileMenu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-white border-t border-gray-200">
+    <a href="index.html" class="block transition font-semibold">Home</a>
+    <a href="portfolio.html" class="block transition">Portfolio</a>
+    <a href="resume.html" class="block transition">Resume</a>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section class="flex flex-col justify-center items-center text-center space-y-4 hero-animated-bg">
+    <section>
+      <h1 class="text-2xl font-xbold fade-in hero-text">Hi, I'm Angel.</h1>
+      <h2 class="text-4xl md:text-6xl font-bold hero-text fade-on-scroll">
+        I am a 
+        <span id="rotating-word" class="inline-block opacity-0 transition-opacity duration-700">
+          creative.
+        </span>
+      </h2>
+    </section>
+    <a href="portfolio.html" class="transition fade-on-scroll hero-cta">
+      View portfolio<span class="symbol-sans"> →</span>
+    </a>
+  </section>
+
+  <!-- Approach -->
+<div class="pattern-grid-bg py-2">
+  <div id="about" class="max-w-6xl mx-auto my-12 px-6 py-6 space-y-4 grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Column 1 Content -->
+    <div class="align-top max-w-4xl mx-auto">
+      <section id="about" class="max-w-4xl mx-auto text-left space-y-4 fade-on-scroll">
+        <h2 class="text-2xl">Great design isn't just about how it looks. <strong class="color-darkblue">It's&nbsp;about how it works.</strong> </h2>
+        <p class="text-overview">
+          Every product, page, or interaction should solve real problems, guide users effortlessly, and create measurable value for the business.
+        </p>
+      </section>
+      <section id="approach" class="max-w-4xl mx-auto text-left py-4 space-y-4 fade-on-scroll">
+        <h3 class="font-bold text-xl">How I work</h3>
+        <p>I approach design like a detective and a storyteller. I start by understanding the user's pain points and the business goals. Then I explore solutions through research, prototypes, and iterative testing, always keeping accessibility, clarity, and scalability in mind.</p>
+        <p>Good design bridges the gap between users and business goals. I focus on crafting experiences that are intuitive, engaging, and effective because when users succeed, the business succeeds too.</p>
+      </section>
+    </div>
+  
+    <!-- Column 2 Content -->
+    <div class="max-w-4xl mx-auto">
+      <section id="problem-process-outcome" class="text-left space-y-4 fade-on-scroll">
+        <section class="block">
+          <h2 class="font-bold">Problem<span class="font-sans"> → </span>Process<span class="font-sans"> → </span>Outcome</h2>
+        </section>
+        <section class="block bg-white rounded-xl p-6 transition transform fade-on-scroll visible">
+          <p class="mb-z0"><strong>Problem:</strong> Identify what's blocking users or limiting business impact.</p>
+        </section>
+        <section class="block bg-white rounded-xl p-6 transition transform fade-on-scroll visible">
+          <p class="mb-z0"><strong>Process:</strong> Collaborate with stakeholders, iterate through design and testing, and turn insights into actionable solutions.</p>
+        </section>
+        <section class="block bg-white rounded-xl p-6 transition transform fade-on-scroll visible">
+          <p class="mb-z0"><strong>Outcome:</strong> Deliver experiences that delight users, improve metrics, and provide meaningful insights for teams to act on.</p>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Projects Overview -->
+<div class="pattern-topo-bg py-2">
+  <section id="projects" class="max-w-6xl mx-auto my-12 px-6 grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 items-stretch">
+    <section class="block col-span-full">
+      <h2 class="text-2xl font-bold">Featured Projects</h2>
+    </section>
+    <section class="project-item" data-category="ux web branding">
+      <a href="case-study-hcss.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+        <div class="p-6 project-copy">
+          <h3 class="font-bold text-xl mb-2">HCSS Landing Pages</h3>
+          <p>Redesigned to improve conversions, streamline UX, and ensure more accurate lead data.</p>
+        </div>
+        <img src="assets/projects/hcss/hcss-hj-landingpage.jpg" alt="Project image" class="w-full h-full object-cove project-image ">
+      </a>
+    </section>
+    <section class="project-item" data-category="web">
+      <a href="case-study-localsignal.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+        <div class="p-6 project-copy">
+          <h3 class="font-bold text-xl mb-2">LocalSignal Docs Website</h3>
+          <p>Built a developer-focused website with clear navigation, structured content, and an intuitive user experience.</p>
+        </div>
+        <img src="assets/projects/ls/ls-website-design-development.png" alt="LocalSignal Website" class=" w-full h-full object-cover project-image">
+      </a>
+    </section>
+    <section class="block col-span-full my-12 text-center space-y-4 fade-on-scroll">
+      <a href="portfolio.html" class="text-white custom-button custom-button-highlight transition">
+        View portfolio projects<span class="symbol-sans"> →</span>
+      </a>
+    </section>
+    
+  </section>
+</div>
+  <!-- Contact Section -->
+  <div id="contact">
+  <section class="max-w-2xl mx-auto px-6 text-center space-y-4 fade-on-scroll visible p-24">
+    <h2 class="text-4xl font-bold">How can I help you?</h2>
+    <p>Want to work together? Reach out!</p>
+      <div class="p-2  space-x-4">
+          <a href="mailto:angelschoeneman@gmail.com" class="custom-button custom-button-light transition" target="_blank">
+            Send Email<span class="symbol-sans"> ↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/angeloves" class="text-white custom-button transition" target="_blank">
+            Find me on LinkedIn<span class="symbol-sans"> ↗</span>
+          </a>
+      </div>
+  </section>
+</div>
+
+ <!-- Footer -->
+ <footer>
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="space-y-2 col-span-2">
+      <h3 class="text-xl font-heading font-brand-AS"><strong>Angel Schoeneman </strong>| UX & Product Designer</h3>
+      <p class="text-gray-600">I am a creative with a passion for creating visually compelling, and user friendly websites. I enjoy helping people achieve amazing results by utilizing my skills as a digital marketer, designer, and developer.</p>
+    </div>
+    <div class="space-y-2">
+      <h4 class="font-heading font-bold">Quick Links</h4>
+      <ul class="space-y-1">
+        <li><a href="index.html" class="transition">Home</a></li>
+        <li><a href="portfolio.html" class="transition">Portfolio</a></li>
+        <li><a href="resume.html" class="transition">Resume</a></li>
+      </ul>
+    </div>
+    <div class="space-y-2">
+      <h4 class="font-heading font-bold">Connect</h4>
+      <ul class="space-y-1">
+        <li><a href="mailto:angeljagrup@gmail.com" class="transition">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/angeloves" class="transition" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/angel-sch" class="transition" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-gray-300 mt-6 py-4 text-center text-gray-500 text-sm">
+    &copy; 2025 Angel Schoeneman. All rights reserved.
+  </div>
+</footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-opacity opacity-0 pointer-events-none z-50">
+    ↑ Top
+  </button>
+
+  <!-- Scripts -->
+<script>
+  const words = [
+    "creative.",
+    "data-driven designer.",
+    "UX strategist.",
+    "problem solver.",
+    "product designer.",
+    "design system builder."
+  ];
+
+  const rotatingWord = document.getElementById("rotating-word");
+  let index = 0;
+
+  function rotate() {
+    // Fade out
+    rotatingWord.classList.add("opacity-0");
+
+    setTimeout(() => {
+      // Update text
+      index = (index + 1) % words.length;
+      rotatingWord.textContent = words[index];
+
+      // Fade in
+      rotatingWord.classList.remove("opacity-0");
+    }, 700); // matches fade duration
+  }
+
+  // Start rotation
+  setInterval(rotate, 4200);
+  
+  // Initial fade-in
+  setTimeout(() => rotatingWord.classList.remove("opacity-0"), 100);
+  </script>
+  <script>
+    const faders = document.querySelectorAll('.fade-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    faders.forEach(fader => observer.observe(fader));
+    
+
+    // Show back-to-top button
+    const backToTopBtn = document.getElementById('backToTop');
+      if(window.pageYOffset > 300){
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100');
+      }
+
+    // Back to Top click
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

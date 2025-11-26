@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Angel Schoeneman">
+  <title>Angel Schoeneman | Page Not Found</title>
+  <meta name="description" content="404 - This page could not be found." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body class="type-sans" id="404" style="background-color: rgb(243 244 246);">
+
+<!-- Main Portfolio Navigation -->
+<header class="top-0 z-50" id="navigation" style="background-color:white;">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo / Name -->
+      <a href="index.html" class="text-xl font-heading font-brand-AS fade-in"><strong>Angel Schoeneman</strong> | Portfolio</a>
+  
+      <!-- Desktop Navigation -->
+      <nav class="space-x-6 hidden md:flex fade-in">
+        <a href="index.html" class="transition">Home</a>
+        <a href="portfolio.html" class="transition">Portfolio</a>
+        <a href="resume.html" class="transition">Resume</a>
+      </nav>
+  
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuButton" class="md:hidden flex items-center text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu Links -->
+    <nav id="mobileMenu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-white border-t border-gray-200">
+      <a href="index.html" class="block transition">Home</a>
+      <a href="portfolio.html" class="block transition">Portfolio</a>
+      <a href="resume.html" class="block transition">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Hero Image -->
+  <div class="flex flex-col justify-center items-center text-center hero-animated-bg" style="
+  background: linear-gradient(-60deg, #98B7DA, #ABD0E6, #BBD9D9);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 80vh;">
+    <h1 class="text-4xl md:text-4xl font-heading font-bold color-white">Error 404</h1>
+    <h2 class="text-2xl md:text-2xl font-heading font-bold">Oops! The page you're looking for doesn't&nbsp;exist.</h2>
+    <a href="http://www.angeljagrup.com" class="custom-button custom-button-light transition">
+        Go to homepage<span class="symbol-sans"> →</span></a>
+  </div>
+ <!-- Footer -->
+ <footer>
+    <div class=" py-4 text-center text-gray-500 text-sm" style="
+    border-top-width: 1px;
+    border-top-color: rgb(209 213 219);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align:center;
+    color:rgb(107 114 128);
+    padding-top: 1rem;
+    padding-bottom: 1rem;">
+      &copy; 2025 Angel Schoeneman. All rights reserved.
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

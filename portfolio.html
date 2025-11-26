@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Schoeneman | UX Designer Portfolio</title>
+  <meta name="description" content="Human-centered UX designer focused on clarity, usability, and thoughtful interaction design. View work centered around research insights, seamless flows, and meaningful digital experiences.">
+  <meta name="keywords" content="ux strategist, product designer, resume, ux">
+  <meta name="author" content="Angel Schoeneman">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="custom.css">
+  <!-- Fade + Lift Animation -->
+  <style>
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        to {
+        opacity: 1;
+        }
+    }
+    </style>
+</head>
+<body class="bg-default type-sans pattern-grid-bg" id="portfolio">
+
+<!-- Main Portfolio Navigation -->
+<header class="bg-white sticky top-0 z-50" id="navigation">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo / Name -->
+      <a href="index.html" class="text-xl font-heading font-brand-AS fade-in"><strong>Angel Schoeneman</strong> | Portfolio</a>
+  
+      <!-- Desktop Navigation -->
+      <nav class="space-x-6 hidden md:flex  fade-in">
+        <a href="index.html" class="transition">Home</a>
+        <a href="portfolio.html" class="transition font-semibold">Portfolio</a>
+        <a href="resume.html" class="transition">Resume</a>
+      </nav>
+  
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuButton" class="md:hidden flex items-center text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu Links -->
+    <nav id="mobileMenu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-white border-t border-gray-200">
+      <a href="index.html" class="block transition">Home</a>
+      <a href="portfolio.html" class="block transition font-semibold">Portfolio</a>
+      <a href="resume.html" class="block transition">Resume</a>
+    </nav>
+    <div class="nav-border"></div>
+  </header>
+
+  <!-- Hero Image -->
+  <div class="header-image mb-8">
+    <div class="h-full w-full flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-6xl font-heading font-bold fade-in">Portfolio</h1>
+    </div>
+  </div>
+
+
+
+  
+  <!-- Filter -->
+  <section class="max-w-6xl mx-auto px-6 mb-12 mt-10 fade-in">
+    <div class="flex gap-3 flex-wrap mb-8">
+        <h2 class="align-middle py-2">Project filter:</h2>
+      <button class="filter-btn filter-btn-selected" data-filter="all">All</button>
+      <!-- <button class="filter-btn" data-filter="ux">UX</button> -->
+      <button class="filter-btn" data-filter="web">UX/Web</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+    </div>
+  
+    <!-- Projects Grid -->
+    <div id="projects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 fade-in">
+  
+      <!-- Project Card -->
+      <section class="project-item" data-category="ux web branding">
+        <a href="case-study-hcss.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">HCSS Landing Pages</h3>
+            <p>Redesigned to improve conversions, streamline UX, and ensure more accurate lead data.</p>
+          </div>
+          <img src="assets/projects/hcss/hcss-hj-landingpage.jpg" alt="Project image" class="w-full h-full object-cove project-image ">
+        </a>
+      </section>
+      <section class="project-item" data-category="branding">
+        <a href="case-study-sporcle-campaigns.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">Sporcle Campaigns</h3>
+            <p>Social media graphics for Sporcle Live to engage audiences and promote trivia events across multiple locations.</p>
+          </div>
+          <img src="assets/projects/sporcle/sporcle_infographicSq.png" alt="Sporcle Mockup" class=" w-full h-full object-cover project-image">
+        </a>
+      </section>
+      <section class="project-item" data-category="branding">
+        <a href="case-study-sporcle.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">Sporcle Live Trivia Collateral</h3>
+            <p>Branding collateral for Sporcle Live's nationwide bar and pub trivia events in the United States.</p>
+          </div>
+          <img src="assets/projects/sporcle/sporcle_BannerStand.jpg" alt="Sporcle Pop-up Banner Design" class=" w-full h-full object-cover project-image">
+        </a>
+      </section>
+      <section class="project-item" data-category="web">
+        <a href="case-study-localsignal.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">LocalSignal Docs Website</h3>
+            <p>Built a developer-focused website with clear navigation, structured content, and an intuitive user experience.</p>
+          </div>
+          <img src="assets/projects/ls/ls-website-design-development.png" alt="LocalSignal Website" class=" w-full h-full object-cover project-image">
+        </a>
+      </section>
+      <section class="project-item" data-category="web">
+        <a href="case-study-cia.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">Construction Intern Awards Website</h3>
+            <p>Highlight scholarship winners and increase engagement year over year.</p>
+          </div>
+          <img src="assets/projects/cia/cia-web-design-development.jpg" alt="CIA Website Mockup" class=" w-full h-full object-cover project-image">
+        </a>
+      </section>
+      <section class="project-item" data-category="web ux">
+        <a href="case-study-texaseviction.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">TexasEviction Website</h3>
+            <p>A responsive website that guides users through eviction-related processes with clear content and adaptive forms.</p>
+          </div>
+          <img src="assets/projects/te/te-website-development-design-full.png" alt="TexasEviction Website" class=" w-full h-full object-cover project-image">
+        </a>
+      </section>
+      <section class="project-item" data-category="branding">
+        <a href="case-study-jumpix.html" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">Jumpix Brand Design Standards</h3>
+            <p>Established a bold, playful identity with clear logo and color guidelines for consistent application.</p>
+          </div>
+          <img src="assets/projects/ju/jumpix-brandingmanual.png" alt="Mockup" class=" w-full h-full object-cover project-image">
+        </a>
+      </section>
+      <!-- 
+        <section class="project-item" data-category="branding">
+        <a href="" class="block bg-white shadow-md rounded-xl hover:scale-105 transition transform fade-on-scroll h-full flex flex-col">
+          <div class="p-6 project-copy">
+            <h3 class="font-bold text-xl mb-2">Name</h3>
+            <p></p>
+          </div>
+          <img src="" alt="Mockup" class=" w-full h-full object-cover project-image">
+        </a>
+      </section> -->
+
+      
+  
+    </div>
+  </section>
+  
+  <!-- Filter Script -->
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".project-item");
+  
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter;
+  
+        // Style active button
+        buttons.forEach(b => b.classList.remove("filter-btn-selected", "text-white"));
+        btn.classList.add("filter-btn-selected", "text-white");
+  
+        cards.forEach(card => {
+        const categories = card.dataset.category.split(" "); // multiple categories
+
+          if (filter === "all" || categories.includes(filter)) {
+            card.classList.remove("hidden");
+            card.classList.add("fade-in");
+            } else {
+            card.classList.add("hidden");
+            }
+        });
+      });
+    });
+  </script>
+  
+  
+
+
+ <!-- Footer -->
+ <footer>
+    <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-2 col-span-2">
+        <h3 class="text-xl font-heading font-brand-AS"><strong>Angel Schoeneman </strong>| UX & Product Designer</h3>
+        <p class="text-gray-600">I am a creative with a passion for creating visually compelling, and user friendly websites. I enjoy helping people achieve amazing results by utilizing my skills as a digital marketer, designer, and developer.</p>
+      </div>
+      <div class="space-y-2">
+        <h4 class="font-heading font-bold">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="transition">Home</a></li>
+          <li><a href="portfolio.html" class="transition">Portfolio</a></li>
+          <li><a href="resume.html" class="transition">Resume</a></li>
+        </ul>
+      </div>
+      <div class="space-y-2">
+        <h4 class="font-heading font-bold">Connect</h4>
+        <ul class="space-y-1">
+          <li><a href="mailto:angeljagrup@gmail.com" class="transition">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/angeloves" class="transition" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/angel-sch" class="transition" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-300 mt-6 py-4 text-center text-gray-500 text-sm">
+      &copy; 2025 Angel Schoeneman. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-opacity opacity-0 pointer-events-none z-50">
+    ↑ Top
+  </button>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-in sections
+    const faders = document.querySelectorAll('.fade-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    faders.forEach(fader => observer.observe(fader));
+
+    // Scroll Spy for sticky project nav
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (pageYOffset >= sectionTop) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if(link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+
+      // Show back-to-top button
+      const backToTopBtn = document.getElementById('backToTop');
+      if(window.pageYOffset > 300){
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100');
+      }
+    });
+    
+    // Back to Top click
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
