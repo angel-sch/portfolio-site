@@ -57,6 +57,7 @@ ol,ul,li {
     }
 .symbol-sans {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
     }
 .truncate-multi-line {
     overflow: hidden;        /* Hides overflowing content */
